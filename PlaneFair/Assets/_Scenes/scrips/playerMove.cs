@@ -49,6 +49,7 @@ public class playerMove : MonoBehaviour
             nextFire = Time.time + fireRate;
             //实例化预设体
             Instantiate(boom, boomController.position, boomController.rotation);
+            this.GetComponent<AudioSource>().Play();
         }
         else
         {

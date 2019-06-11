@@ -22,5 +22,9 @@ public class stone_destroy : MonoBehaviour
                 Instantiate(playerBoomAnimation, this.transform.position, this.transform.rotation);
             }
         }
+        else
+        {
+            Destroy(this.gameObject); //销毁自身
+        }
     }
 }
